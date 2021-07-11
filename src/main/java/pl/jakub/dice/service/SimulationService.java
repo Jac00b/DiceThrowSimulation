@@ -31,6 +31,12 @@ public class SimulationService {
 
     }
 
+    public List<Simulation> findByAmountOfWalls(int amountOfWalls){
+        return simulationRepository.findSimulationEntityByAmountOfWalls(amountOfWalls).stream()
+                .map(SimulationMapper::toDto)
+                .collect(Collectors.toList());
+    }
+
     private Simulation mapAndSave(Simulation simulation) {
         SimulationEntity simulationEntity = SimulationMapper.toEntity(simulation);
         SimulationEntity savedSimulation = simulationRepository.save(simulationEntity);
