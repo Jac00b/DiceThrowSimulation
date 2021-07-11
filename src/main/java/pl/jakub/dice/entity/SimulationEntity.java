@@ -2,9 +2,7 @@ package pl.jakub.dice.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -19,7 +17,8 @@ public class SimulationEntity {
     //klasa encji sumulacji rzutów
     
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private int amountOfThrows;
     private int amountOfDices;
     private int amountOfWalls;

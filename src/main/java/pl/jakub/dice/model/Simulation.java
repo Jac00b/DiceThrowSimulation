@@ -12,7 +12,7 @@ public class Simulation {
 
     //klasa POJO modelu
 
-    private long id;
+    private Long id;
     private int amountOfThrows;
     private int amountOfDices;
     private int amountOfWalls;
