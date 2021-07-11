@@ -1,8 +1,10 @@
 package pl.jakub.dice.mapper;
 
+import org.springframework.stereotype.Service;
 import pl.jakub.dice.entity.SimulationEntity;
 import pl.jakub.dice.model.Simulation;
 
+@Service
 public class SimulationMapper {
 
     //MAPPERY
