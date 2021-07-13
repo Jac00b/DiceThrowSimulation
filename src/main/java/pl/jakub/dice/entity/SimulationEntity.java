@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table(name = "throws")
 public class SimulationEntity {
 
-    //klasa encji sumulacji rzutów
+    //ENTITY CLASS
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

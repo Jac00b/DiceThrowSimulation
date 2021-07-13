@@ -10,7 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 public class Simulation {
 
-    //klasa POJO modelu
+    //POJO CLASS
 
     private Long id;
     private int amountOfThrows;

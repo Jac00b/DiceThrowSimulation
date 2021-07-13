@@ -7,7 +7,7 @@ import pl.jakub.dice.model.Simulation;
 @Service
 public class SimulationMapper {
 
-    //MAPPERY
+    //MAPPERS
 
     public static SimulationEntity toEntity(Simulation simulation) {
         SimulationEntity simulationEntity = new SimulationEntity();
